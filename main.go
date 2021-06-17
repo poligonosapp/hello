@@ -28,6 +28,9 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+
+fmt.Println("Hello, World!")
+
 	http.HandleFunc("/", homeHandler)
 
 	err := http.ListenAndServe(":38000", nil)
